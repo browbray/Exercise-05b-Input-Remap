@@ -29,5 +29,5 @@ func display_current_key():
 
 
 func remap_action_to(event):
-	# Input remapping goes here
-	text = "%s Key" % event.as_text()
+		InputMap.action_erase_events(action)
+		InputMap.action_add_event(action, event)
